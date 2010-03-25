@@ -54,6 +54,7 @@ JavaScript acting as the default view definition language.
 %patch2 -p1 -b .597fix
 %patch3 -p1 -b .mochiweb-max
 %patch4 -p1 -b .checkpoints
+%patch5 -p1 -b .attbackoff
 # Patch pid location
 #sed -i 's/%localstatedir%\/run\/couchdb.pid/%localstatedir%\/run\/couchdb\/couchdb.pid/g' \
 #bin/couchdb.tpl.in
