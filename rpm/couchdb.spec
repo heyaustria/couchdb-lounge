@@ -17,6 +17,7 @@ Patch1:         %{name}-%{version}-designreplication.patch
 Patch2:         %{name}-%{version}-597fix.patch
 Patch3:         %{name}-%{version}-mochiweb-max.patch
 Patch4:         %{name}-%{version}-checkpoints.patch
+Patch5:         %{name}-%{version}-attbackoff.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:  erlang
