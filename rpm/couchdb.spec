@@ -4,7 +4,7 @@
 %define couchdb_home %{_localstatedir}/lib/couchdb
 Name:           couchdb
 Version:        0.10.1
-Release:        5%{?dist}.lounge1
+Release:        6%{?dist}.lounge1
 Summary:        A document database server, accessible via a RESTful JSON API
 
 Group:          Applications/Databases

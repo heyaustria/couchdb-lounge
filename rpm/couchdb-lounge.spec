@@ -1,6 +1,6 @@
 Name:		couchdb-lounge
 Version: 	1.2.0
-Release:	7%{?dist}
+Release:	8%{?dist}
 Summary:	Clustered CouchDB
 Group: 		Database/CouchDBCluster
 License: 	Apache
@@ -20,8 +20,8 @@ cp -p %{_sourcedir}/lounge.ini .
 %clean
 
 %install
-mkdir -p %{buildroot}/etc/couchdb/local.d
-cp %{_builddir}/lounge.ini %{buildroot}/etc/couchdb/local.d/lounge.ini
+mkdir -p %{buildroot}/etc/couchdb/default.d
+cp %{_builddir}/lounge.ini %{buildroot}/etc/couchdb/default.d/lounge.ini
 
 %post
 /etc/init.d/couchdb stop
@@ -30,5 +30,5 @@ cp %{_builddir}/lounge.ini %{buildroot}/etc/couchdb/local.d/lounge.ini
 /etc/init.d/dumbproxy restart
 
 %files
-%config(noreplace)/etc/couchdb/local.d/lounge.ini
+%config/etc/couchdb/default.d/lounge.ini
 
